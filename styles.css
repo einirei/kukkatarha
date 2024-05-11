@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inria Sans", sans-serif;
+}
+
+/*navbar-start*/
+.nav-links {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color:  #E4D4C8;
+}
+  
+.nav-links li {
+    float: right;
+}
+  
+.nav-links li a {
+    display: block;
+    color:#533440;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.nav-links li a:hover:not(.active) {
+    background-color:#A47786;
+}
+  
+.nav-links .active {
+    color: white;
+    /*background-color: #A47786;*/
+}
+/*navbar-end*/
+
+header {
+    background-image: url("etusivu.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.valikoima {
+    background-image: url("daaliat.jpg");
+}
+
+.palvelut {
+    background-image: url("kukkaistutus.jpg");
+}
+
+header h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 46px;
+    text-align: center;
+    color: #533440;
+    padding: 150px 10px 150px 10px;
+    margin: 0px; /*kuvan ylälaita kiinni reunaan*/
+}
+
+.lead {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    background-color: #A47786;
+    padding: 30px;
+    margin: 0px;
+}
+
+.link {
+    font-size: 20px;
+    color:#533440;
+}
+
+section p {
+    font-size: 24px;
+    text-align: center;
+    padding: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.column {
+    overflow: auto; /* varmistaa, että sisältö pysyy columnin sisässä*/
+}
+
+.column img {
+    float: left;
+    margin-right: 15px; /*säätää tektin ja kuvakkeen väliin tyhjää*/
+    margin-left: 15px; 
+} 
+
+.smalltext {
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+.kukkalistaukset h3 {
+    text-align: center;
+    color:#533440;
+}
+
+.kukkalistaukset p {
+    font-size: 20px;
+}
+
+.palveluotsikko h3 {
+    text-align: left;
+    margin-left: 45px; /*oltava sama .palvelukuvaus img kanssa*/
+    margin-bottom: 0px;
+    color:#533440;
+}
+
+.palvelukuvaus {
+    overflow: auto; /* varmistaa, että sisältö pysyy columnin sisässä*/
+    display: inline-flex;
+    align-items: center;
+}
+
+.palvelukuvaus p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.palvelukuvaus img {
+    margin-left: 45px; /*oltava sama .palveluotsikko h3 kanssa*/
+    margin-right: 10px; /*säätää tektin ja kuvakkeen väliin tyhjää*/
+}
+
+/*form-start*/
+form {
+    width: 75%; /*Asettaa lomakkeen leveydeksi X% näytön leveydestä */
+    margin: auto; 
+  }
+
+  .form-container {
+    border-radius: 5px;
+    padding: 20px;  
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%; /*Lomakkeelle varatusta leveydestä käytössä kaikki*/
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+  }
+  
+label {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #A47786;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    float: left;
+}
+
+input[type=submit]:hover {
+    background-color: #E4D4C8;
+}
+
+.col-label {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+.col-input {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+/*form-end*/
+
+footer {
+    background-color: #E4D4C8;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    margin: 0px; /*footerin alalaita kiinni reunaan*/
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+}
+
+footer .link { 
+    font-size: 16px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 650px) {
+    .nav-links li {
+        float: none;
+        width: 100%;
+    }
+    header h1 {
+        font-size: 36px;
+    }
+    .lead {
+        font-size: 20px;
+    }   
+    .link {
+        font-size: 14px;
+    } 
+    section p {
+        font-size: 18px;
+    }
+    .smalltext {
+        font-size: 16px;
+    }
+    .kukkalistaukset p {
+        font-size: 16px;
+    }
+    .palveluotsikko h3 {
+        font-size: 16px;
+    }
+    .palvelukuvaus p {
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .col-label, .col-input {
+        width: 80%;
+        margin-top: 0;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    header h1 {
+        font-size: 70px;
+        padding: 200px 10px 200px 10px;
+    }
+    .lead {
+        padding: 30px 175px 30px 175px;
+    }
+    section p {
+        margin-right: 175px;
+        margin-left: 175px;
+    }
+    .column {
+        float: left;
+        width: 50%;
+    }
+    .palveluotsikko h3 {
+        margin-left: 250px;
+    }
+    .palvelukuvaus img {
+        margin-left: 250px;
+    }
+    .palvelukuvaus p {
+        margin-left: 25px;
+    }
+
+
+
+
+    
+}
+

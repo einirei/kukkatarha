@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pieni Kukkatarha</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    -->
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <!--käänteinen järjestys, jotta css li {float: right;} toimii järkevästi, enkä saanut muilla tavoilla tehtyä-->
+            <li><a href="yhteydenotto.html">Yhteydenotto</a></li>
+            <li><a href="palvelut.html">Palvelut</a></li>
+            <li><a href="valikoima.html">Valikoima</a></li>
+            <li><a class="active" href="index.html">Etusivu</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Pieni Kukkatarha</h1>
+    </header>
+    
+    <section>
+        <p class="lead">Tulevan viljelykauden suunnittelu on parhaillaan käynnissä. Isommat tilaukset kannattaa tehdä hyvissä ajoin. Viimeistään toukokuussa.<br>
+            <a class="link" href="yhteydenotto.html">Ota yhteyttä</a>
+        </p>
+        <p>Tervetuloa tutustumaan pieneen kukkatarhaani kaupungin laitamilla. Kasvatan leikkokukkia itseni ja nyt myös muiden iloksi omalla pihallani. 
+            Piristä päivääsi vastuullisesti kasvatetuin kukin tai vie kimppu lahjaksi! Sopimuksesta viljelen myös suurempia määriä. Katso muut palvelut, jos kaipaat apua oman pihasi kanssa.</p>
+    </section>
+
+    <!--div korvaaminen sectionilla vaikutti asetteluun, joten jätin tekemättä-->
+    <div class="row">
+        <div class="column">
+            <p class="smalltext"><img src="icons8-sunrise-farm-68.png" alt="summer icon"width="70px" height="70px">Satokausi. Leikkokukkani kasvavat avomaalla säiden armoilla. Saatavuus toukokuusta syys-lokakuulle.</p>  
+        </div>
+        <div class="column">
+            <p class="smalltext"> <img src="icons8-ecosystem-100.png" alt="planet icon" width="70px" height="70px">Ekologisuus. Lähellä kasvaneet leikkokukat ovat vastuullinen valinta.</p>  
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright Pieni Kukkatarha Oy<br>
+        Icons from <a class="link" target="_blank" href="https://icons8.com">Icons8</a></p>
+    </footer>
+    
+</body>
+
+</html>
