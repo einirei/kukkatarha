@@ -79,7 +79,8 @@ p {
     font-size: 24px;
     text-align: center;
     padding: 0;
-    margin: 0 50px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .column {
@@ -88,11 +89,13 @@ p {
 
 .column img {
     float: left;
-    margin: 0 15px; /*säätää tektin ja kuvakkeen väliin tyhjää*/
+    margin-right: 15px; /*säätää tektin ja kuvakkeen väliin tyhjää*/
+    margin-left: 25px; 
 } 
 
 .smalltext {
     font-size: 20px;
+    text-align: left;
     padding: 0 20px;
 }
 
@@ -254,12 +257,28 @@ footer .link {
         padding: 30px 175px;
     }
     p {
-        margin: 0 175px;
+        margin-right: 175px;
+        margin-left: 175px;
     }
+    .row {
+        display: flex;
+        justify-content: space-around; /* Tasaa columnit ympäriinsä */
+    }
+
     .column {
-        float: left;
-        width: 50%;
+        width: 70%;
     }
+    
+    .column img {
+        width: 15%; 
+        height: auto; 
+    } 
+
+    .smalltext {
+        margin-right: auto;
+        padding: 0;
+    }
+
     .palveluotsikko h3 {
         margin-left: 250px;
     }
